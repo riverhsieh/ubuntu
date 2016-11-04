@@ -7,9 +7,6 @@
 # Pull base image.
 FROM ubuntu:14.04
 
-ENV http_proxy http://10.110.15.61:8080
-ENV https_proxy https://10.110.15.61:8080
-
 # Install.
 RUN \
   sed -i 's/# \(.*multiverse$\)/\1/g' /etc/apt/sources.list && \
